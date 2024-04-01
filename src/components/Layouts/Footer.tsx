@@ -14,17 +14,17 @@ const Footer: React.FC = () => {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-3 col-sm-6">
-              <div 
+              <div
                 className="single-footer-widget"
-                data-aos="fade-in" 
-                data-aos-duration="1000" 
+                data-aos="fade-in"
+                data-aos-duration="1000"
                 data-aos-delay="100"
               >
                 <div className="logo">
                   <Link href="/">
-                    <Image 
+                    <Image
                       src={logo}
-                      alt="Logo" 
+                      alt="Logo"
                       width={150}
                       height={40}
                     />
@@ -63,10 +63,10 @@ const Footer: React.FC = () => {
             </div>
 
             <div className="col-lg-3 col-md-6 col-sm-6">
-              <div 
+              <div
                 className="single-footer-widget ml-4 pl-5"
-                data-aos="fade-in" 
-                data-aos-duration="1000" 
+                data-aos="fade-in"
+                data-aos-duration="1000"
                 data-aos-delay="200"
               >
                 <h3>Explore</h3>
@@ -102,10 +102,10 @@ const Footer: React.FC = () => {
             </div>
 
             <div className="col-lg-3 col-sm-6">
-              <div 
+              <div
                 className="single-footer-widget ml-4"
-                data-aos="fade-in" 
-                data-aos-duration="1000" 
+                data-aos="fade-in"
+                data-aos-duration="1000"
                 data-aos-delay="300"
               >
                 <h3>Quick Links</h3>
@@ -141,10 +141,10 @@ const Footer: React.FC = () => {
             </div>
 
             <div className="col-lg-3 col-sm-6">
-              <div 
+              <div
                 className="single-footer-widget"
-                data-aos="fade-in" 
-                data-aos-duration="1000" 
+                data-aos="fade-in"
+                data-aos-duration="1000"
                 data-aos-delay="400"
               >
                 <h3>Get in Touch</h3>
@@ -156,7 +156,7 @@ const Footer: React.FC = () => {
                   </li>
                   <li>
                     <i className="fa-solid fa-headset"></i>
-                    <a href="tel:+324-9442-515">+324-9442-515</a> 
+                    <a href="tel:+324-9442-515">+324-9442-515</a>
                     <br />
                     <a href="tel:+324-9442-515">+324-9442-999</a>
                   </li>
@@ -174,10 +174,7 @@ const Footer: React.FC = () => {
         <div className="copyright-area">
           <div className="container">
             <p>
-              Copyright &copy; {currentYear} Pungent. All Rights Reserved By{" "}
-              <a href="https://envytheme.com" target="_blank">
-                EnvyTheme
-              </a>
+              Copyright &copy; {currentYear} Arrow. All Rights Reserved By{" "}
             </p>
           </div>
         </div>

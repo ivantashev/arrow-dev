@@ -1,13 +1,11 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, {useEffect, useState} from "react";
 import Image from "next/image";
 import Link from "next/link";
-import MenuItem from "./MenuItem";
 import MegaMenu from "./MegaMenu";
-import { menus } from "../../../libs/menus";
 
-import logo from "../../../public/images/logo.png";
+import logo from "../../../public/images/arrow_logo_black.png";
 
 const Navbar: React.FC = () => {
   const [menu, setMenu] = useState<boolean>(true);
@@ -39,19 +37,21 @@ const Navbar: React.FC = () => {
       <div id="navbar" className="navbar-area">
         <nav className="navbar navbar-expand-md navbar-light">
           <div className="container">
-            <Link href="/" className="navbar-brand">
-              <Image src={logo} alt="logo" width={150} height={40} />
-            </Link>
+            <div className="others-options">
+              <Link href="/contact-us/" className="btn btn-primary">
+                Get in touch
+              </Link>
+            </div>
 
             {/* Toggle navigation */}
             <button
-              onClick={toggleNavbar}
-              className={classTwo}
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
+                onClick={toggleNavbar}
+                className={classTwo}
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
               aria-label="Toggle navigation"
             >
               <span className="icon-bar top-bar"></span>
@@ -61,18 +61,11 @@ const Navbar: React.FC = () => {
 
             <div className={classOne} id="navbarSupportedContent">
               <ul className="navbar-nav">
-                <MegaMenu />
-
-                {menus.map((menuItem) => (
-                  <MenuItem key={menuItem.label} {...menuItem} />
-                ))}
+                <MegaMenu/>
               </ul>
-
-              <div className="others-options">
-                <Link href="/contact-us/" className="btn btn-primary">
-                  Get Started
-                </Link>
-              </div>
+              <Link href="/" className="navbar-brand">
+                <Image src={logo} alt="logo" width={150} height={40}/>
+              </Link>
             </div>
           </div>
         </nav>

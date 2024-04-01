@@ -1,43 +1,45 @@
-import Navbar from "./../components/Layouts/Navbar";
-import MainBanner from "../components/HomePages/DefaultHome/MainBanner";
-import Services from "../components/HomePages/DefaultHome/Services";
-import About from "../components/HomePages/DefaultHome/About";
-import OurWorks from "../components/HomePages/DefaultHome/OurWorks";
-import WorkProcess from "../components/HomePages/DefaultHome/WorkProcess";
-import Feedback from "../components/Common/Feedback";
-import Team from "../components/Common/Team";
-import FunFacts from "../components/Common/FunFacts";
+import React from "react";
+import Navbar from "../components/Layouts/Navbar";
+import Banner from "../components/HomePages/SoftwareStartup/Banner";
+import HelpDesk from "../components/HomePages/SoftwareStartup/HelpDesk";
+import Screenshots from "../components/HomePages/SoftwareStartup/Screenshots";
+import Partners from "../components/HomePages/SoftwareStartup/Partners";
+import Overview from "../components/HomePages/SoftwareStartup/Overview";
+import Funfacts from "../components/HomePages/SoftwareStartup/Funfacts";
+import FeedbackThree from "../components/Common/FeedbackThree";
+import Pricing from "../components/HomePages/SoftwareStartup/Pricing";
+import Faq from "../components/HomePages/SoftwareStartup/Faq";
 import LatestNewsSlider from "../components/Common/LatestNewsSlider";
-import CtaArea from "../components/Common/CtaArea";
-import Partner from "../components/Common/Partner";
+import AppDownload from "../components/HomePages/SoftwareStartup/AppDownload";
+import CtaAreaTwo from "../components/Common/CtaAreaTwo";
 import Footer from "../components/Layouts/Footer";
 
-export default function Home() {
+export default function Page() {
   return (
     <>
       <Navbar />
 
-      <MainBanner />
+      <Banner />
 
-      <Services />
+      <HelpDesk />
 
-      <About />
+      <Screenshots />
 
-      <OurWorks />
+      <Partners />
 
-      <WorkProcess />
+      <Overview />
 
-      <Feedback />
+      <Funfacts />
 
-      <Team />
+      <FeedbackThree />
 
-      <FunFacts />
+      <Pricing />
 
-      <LatestNewsSlider />
+      <Faq />
 
-      <CtaArea />
+      <AppDownload />
 
-      <Partner />
+      <CtaAreaTwo />
 
       <Footer />
     </>

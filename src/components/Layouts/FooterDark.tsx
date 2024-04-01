@@ -146,10 +146,7 @@ const FooterDark: React.FC = () => {
         <div className="copyright-area">
           <div className="container">
             <p>
-              Copyright &copy; {currentYear} Pungent. All Rights Reserved By{" "}
-              <a href="https://envytheme.com" target="_blank">
-                EnvyTheme
-              </a>
+              Copyright &copy; {currentYear} Pungent. All Rights Reserved{" "}
             </p>
           </div>
         </div>
