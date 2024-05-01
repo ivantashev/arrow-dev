@@ -20,6 +20,10 @@ ul {
   margin-left: 0.25rem !important;
 }
 
+.navbar-area {
+  direction: rtl;
+}
+
 .navbar-area nav .navbar-nav {
   margin-left: 0;
   margin-right: auto;
