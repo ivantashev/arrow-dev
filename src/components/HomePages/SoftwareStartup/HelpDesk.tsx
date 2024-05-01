@@ -7,34 +7,34 @@ import Image from "next/image";
 const servicesData = [
   {
     icon: "/images/software/icon1.png",
-    title: "Zero Configuration",
+    title: "API development",
     shortText:
-      "Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Sed est non feugiat sagittis, donec.",
-    viewDetails: "/services/service-details/",
+        "Laravel streamlines API development, making it an ideal option for constructing resilient and scalable APIs that cater to decoupled architecture, mobile applications, and third-party integrations.",
+    viewDetails: null,
     aosDelay: "100",
   },
   {
     icon: "/images/software/icon2.png",
-    title: "Code Security",
+    title: "Enterprise applications",
     shortText:
-      "Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Sed est non feugiat sagittis, donec.",
-    viewDetails: "/services/service-details/",
+      "Laravel and NextJS frameworks allow us to build  complex, data-intensive enterprise applications that require high performance and reliability",
+    viewDetails: null,
     aosDelay: "200",
   },
   {
-    icon: "/images/software/icon3.png",
-    title: "Team Management",
+    icon: "/images/software/icon4.png",
+    title: "Online portals",
     shortText:
-      "Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Sed est non feugiat sagittis, donec.",
-    viewDetails: "/services/service-details/",
+      "Craft customizable and intuitive customer portal solutions designed specifically to meet your company's requirements, ensuring seamless customer interactions.",
+    viewDetails: null,
     aosDelay: "300",
   },
   {
-    icon: "/images/software/icon4.png",
-    title: "Access Controlled",
+    icon: "/images/software/icon3.png",
+    title: "Startups and MVPs",
     shortText:
-      "Lorem ipsum dolor sit amet, conse ctetur adipiscing elit. Sed est non feugiat sagittis, donec.",
-    viewDetails: "/services/service-details/",
+      "Utilize Laravel's and NextJS swift development capabilities to rapidly launch minimum viable products (MVPs), validating ideas promptly and attracting potential investors.",
+    viewDetails: null,
     aosDelay: "400",
   },
 ];
@@ -45,8 +45,8 @@ const HelpDesk: React.FC = () => {
       <div className="pb-70">
         <div className="container">
           <div className="section-title">
-            <span className="sub-title">How Can Help You!</span>
-            <h2>We’re helping teams do their best work</h2>
+            <h3>Every Arrow project is a distinctive combination of marketing services tailored to optimize your brand's
+              expansion</h3>
           </div>
 
           <div className="row justify-content-center">
@@ -70,9 +70,9 @@ const HelpDesk: React.FC = () => {
                     </div>
                     <h3>{value.title}</h3>
                     <p>{value.shortText}</p>
-                    <Link href={value.viewDetails} className="link-btn">
+                    {value.viewDetails && <Link href={value.viewDetails} className="link-btn">
                       Learn More <i className="fa-solid fa-angle-right"></i>
-                    </Link>
+                    </Link>}
                   </div>
                 </div>
               ))}

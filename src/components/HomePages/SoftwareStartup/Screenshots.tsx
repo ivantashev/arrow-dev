@@ -15,10 +15,8 @@ const Screenshots: React.FC = () => {
       <div className="screenshots-area bg-gradient ptb-100">
         <div className="container">
           <div className="section-title white-color">
-            <span className="sub-title">Screenshots</span>
             <h2>
-              Easily Customize within <br />
-              One Minute
+              Arrow specialises across the Laravel and NextJS ecosystem
             </h2>
           </div>
 
@@ -29,19 +27,19 @@ const Screenshots: React.FC = () => {
                   <TabList>
                     <Tab>
                       <i className="bx bx-data"></i>
-                      Budget Overview
+                      Development Tools and Packages
                     </Tab>
                     <Tab>
                       <i className="bx bx-add-to-queue"></i>
-                      Create & Adjust
+                      Creative Design and UX
                     </Tab>
                     <Tab>
                       <i className="bx bx-file"></i>
-                      View Reports
+                      Templating and Front-End
                     </Tab>
                     <Tab>
                       <i className="bx bx-bookmark-plus"></i>
-                      Integrations
+                      Authentication and Authorization
                     </Tab>
                   </TabList>
                 </div>

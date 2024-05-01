@@ -15,11 +15,10 @@ import faqImg from "../../../../public/images/software/faq-img.png";
 const Faq: React.FC = () => {
   return (
     <>
-      <div className="pb-100">
+      <div className="pb-50 pt-50">
         <div className="container">
           <div className="section-title">
-            <span className="sub-title">Frequently Ask &amp; Question</span>
-            <h2>Dedicated to help anything people’s needs</h2>
+            <h2>Frequently Ask &amp; Question</h2>
           </div>
 
           <div className="row align-items-center">

@@ -9,7 +9,6 @@ import Funfacts from "../components/HomePages/SoftwareStartup/Funfacts";
 import FeedbackThree from "../components/Common/FeedbackThree";
 import Pricing from "../components/HomePages/SoftwareStartup/Pricing";
 import Faq from "../components/HomePages/SoftwareStartup/Faq";
-import LatestNewsSlider from "../components/Common/LatestNewsSlider";
 import AppDownload from "../components/HomePages/SoftwareStartup/AppDownload";
 import CtaAreaTwo from "../components/Common/CtaAreaTwo";
 import Footer from "../components/Layouts/Footer";
@@ -29,15 +28,11 @@ export default function Page() {
 
       <Overview />
 
-      <Funfacts />
+      {/*<Funfacts />*/}
 
-      <FeedbackThree />
-
-      <Pricing />
+      {/*<FeedbackThree />*/}
 
       <Faq />
-
-      <AppDownload />
 
       <CtaAreaTwo />
 

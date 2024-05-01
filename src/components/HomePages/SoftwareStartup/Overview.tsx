@@ -66,47 +66,47 @@ const Overview: React.FC = () => {
     <>
       <div className="software-overview-area ptb-100 bg-f9f9f9">
         <div className="container">
-          {softwareIntregrationsData &&
-            softwareIntregrationsData.map((value, i) => (
-              <div className="software-overview-box" key={i}>
-                <div className="row align-items-center">
-                  <div
-                    className="col-lg-6 col-md-12 overview-image left-img"
-                    data-aos="zoom-in"
-                    data-aos-duration="1000"
-                  >
-                    <Image
-                      src={value.image}
-                      alt="Software Intregrations"
-                      width={642}
-                      height={704}
-                    />
-                  </div>
+          {/*{softwareIntregrationsData &&*/}
+          {/*  softwareIntregrationsData.map((value, i) => (*/}
+          {/*    <div className="software-overview-box" key={i}>*/}
+          {/*      <div className="row align-items-center">*/}
+          {/*        <div*/}
+          {/*          className="col-lg-6 col-md-12 overview-image left-img"*/}
+          {/*          data-aos="zoom-in"*/}
+          {/*          data-aos-duration="1000"*/}
+          {/*        >*/}
+          {/*          <Image*/}
+          {/*            src={value.image}*/}
+          {/*            alt="Software Intregrations"*/}
+          {/*            width={642}*/}
+          {/*            height={704}*/}
+          {/*          />*/}
+          {/*        </div>*/}
 
-                  <div className="col-lg-6 col-md-12 overview-content">
-                    <span className="sub-title">{value.subTitle}</span>
+          {/*        <div className="col-lg-6 col-md-12 overview-content">*/}
+          {/*          <span className="sub-title">{value.subTitle}</span>*/}
 
-                    <h2>{value.title}</h2>
+          {/*          <h2>{value.title}</h2>*/}
 
-                    <ul className="overview-list">
-                      {value.overviewList.map((value, i) => (
-                        <li
-                          key={i}
-                          data-aos="fade-in"
-                          data-aos-duration="1000"
-                          data-aos-delay={value.aosDelay}
-                        >
-                          <span>
-                            <i className="fa-solid fa-check"></i>
-                            {value.title}
-                          </span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            ))}
+          {/*          <ul className="overview-list">*/}
+          {/*            {value.overviewList.map((value, i) => (*/}
+          {/*              <li*/}
+          {/*                key={i}*/}
+          {/*                data-aos="fade-in"*/}
+          {/*                data-aos-duration="1000"*/}
+          {/*                data-aos-delay={value.aosDelay}*/}
+          {/*              >*/}
+          {/*                <span>*/}
+          {/*                  <i className="fa-solid fa-check"></i>*/}
+          {/*                  {value.title}*/}
+          {/*                </span>*/}
+          {/*              </li>*/}
+          {/*            ))}*/}
+          {/*          </ul>*/}
+          {/*        </div>*/}
+          {/*      </div>*/}
+          {/*    </div>*/}
+          {/*  ))}*/}
 
           {teamIntregrationsData &&
             teamIntregrationsData.map((value, i) => (

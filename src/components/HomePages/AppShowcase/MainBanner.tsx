@@ -21,9 +21,9 @@ const MainBanner: React.FC = () => {
               <div className="col-lg-6 col-md-12">
                 <div className="content">
                   <span className="sub-title">
-                    # Get your 14 days free trail!
+                    Laravel and NextJS enthusiasts
                   </span>
-                  
+
                   <h1>
                     The Revolutionary App That Makes Your Life Easier Than
                     Others App
