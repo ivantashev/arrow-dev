@@ -6,8 +6,13 @@ import Link from "next/link";
 import MegaMenu from "./MegaMenu";
 
 import logo from "../../../public/images/arrow_logo_black.png";
+import logoWhite from "../../../public/images/arrow_logo_white.png";
 
-const Navbar: React.FC = () => {
+const Navbar = ({
+  logoColour = "black",
+}: {
+  logoColour?: string;
+}) => {
   const [menu, setMenu] = useState<boolean>(true);
 
   const toggleNavbar = () => {
@@ -35,6 +40,7 @@ const Navbar: React.FC = () => {
   return (
     <>
       <div id="navbar" className="navbar-area">
+        {logoColour}
         <nav className="navbar navbar-expand-md navbar-light">
           <div className="container">
             <div className="others-options">
@@ -64,7 +70,7 @@ const Navbar: React.FC = () => {
                 <MegaMenu/>
               </ul>
               <Link href="/" className="navbar-brand">
-                <Image src={logo} alt="logo" width={150} height={40}/>
+                <Image src={(logoColour === 'black') ? logo : logoWhite} alt="logo" width={150} height={40}/>
               </Link>
             </div>
           </div>

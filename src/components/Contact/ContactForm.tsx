@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React, {useState} from "react";
+import sendEmail from "@/services/Mailgun/SendEmail";
 
 interface FormState {
   name: string;
@@ -19,17 +20,31 @@ const ContactForm: React.FC = () => {
     message: "",
   });
 
+  const [success, setSuccess] = useState<boolean>(false);
+
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+      e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    const {name, value} = e.target;
+    setFormData({...formData, [name]: value});
   };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission logic here
-    console.log(formData);
+
+    sendEmail(
+        process.env.NEXT_PUBLIC_TO_EMAIL ?? "",
+        `New message from contact form.`,
+        `Name: ${formData.name}
+Email: ${formData.email} 
+Phone: ${formData.number} 
+Message: ${formData.message}`
+    ).then((response) => {
+      if (response) {
+        setSuccess(true);
+      }
+    });
+
     // Reset form data after submission if needed
     setFormData({
       name: "",
@@ -38,6 +53,8 @@ const ContactForm: React.FC = () => {
       subject: "",
       message: "",
     });
+
+    setSuccess(true);
   };
 
   return (
@@ -46,8 +63,8 @@ const ContactForm: React.FC = () => {
         <div className="contact-title">
           <h2>Get In Touch</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Thank you for considering Arrow. Please provide a brief overview of the services you're interested in, and
+            we'll reach out to you promptly to discuss further details.
           </p>
         </div>
 
@@ -114,16 +131,24 @@ const ContactForm: React.FC = () => {
                 <div className="col-lg-12 col-md-12">
                   <div className="form-group">
                     <textarea
-                      name="message"
-                      cols={30}
-                      rows={6}
-                      placeholder="Write your message..."
-                      className="form-control"
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
+                        name="message"
+                        cols={30}
+                        rows={6}
+                        placeholder="Write your message..."
+                        className="form-control"
+                        value={formData.message}
+                        onChange={handleChange}
+                        required
                     />
                   </div>
+                </div>
+
+                <div className="col-lg-12 col-sm-12">
+                  {success && (
+                      <div className="alert alert-success">
+                        Your message has been sent successfully.
+                      </div>
+                  )}
                 </div>
 
                 <div className="col-lg-12 col-sm-12">
