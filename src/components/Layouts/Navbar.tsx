@@ -40,7 +40,6 @@ const Navbar = ({
   return (
     <>
       <div id="navbar" className="navbar-area">
-        {logoColour}
         <nav className="navbar navbar-expand-md navbar-light">
           <div className="container">
             <div className="others-options">
