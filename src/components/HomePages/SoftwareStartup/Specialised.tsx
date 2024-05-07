@@ -3,26 +3,26 @@
 import React from "react";
 import Image from "next/image";
 
-const partnersData = [
+const frameworks = [
   {
-    image: "/images/software/spring.png",
+    image: "/images/frameworks/laravel.jpg",
     aosDelay: "200",
   },
   {
-    image: "/images/software/service-box.png",
+    image: "/images/frameworks/nextjs.png",
     aosDelay: "300",
   },
   {
-    image: "/images/software/hk.jpg",
+    image: "/images/frameworks/reactjs.png",
     aosDelay: "400",
   },
   {
-    image: "/images/software/sharp.png",
+    image: "/images/frameworks/vuejs.png",
     aosDelay: "500",
   },
 ];
 
-const Partners: React.FC = () => {
+const Specialised: React.FC = () => {
   return (
     <>
       <div className="software-partner-area ptb-100">
@@ -35,14 +35,14 @@ const Partners: React.FC = () => {
                 data-aos-duration="1000"
                 data-aos-delay="100"
               >
-                Trusted by:
+                Specialised with:
               </div>
             </div>
 
             <div className="col-lg-8 col-md-12">
               <div className="row justify-content-center align-items-center">
-                {partnersData &&
-                  partnersData.slice(0, 4).map((value, i) => (
+                {frameworks &&
+                  frameworks.slice(0, 4).map((value, i) => (
                     <div className="col-lg-3 col-md-3 col-sm-3 col-6" key={i}>
                       <div
                         className="software-partner-item"
@@ -52,7 +52,7 @@ const Partners: React.FC = () => {
                       >
                         <Image
                           src={value.image}
-                          alt="partner image"
+                          alt="framework image"
                           width={125}
                           height={35}
                         />
@@ -68,4 +68,4 @@ const Partners: React.FC = () => {
   );
 };
 
-export default Partners;
+export default Specialised;

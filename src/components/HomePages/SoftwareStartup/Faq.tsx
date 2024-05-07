@@ -53,7 +53,7 @@ const Faq: React.FC = () => {
                         The pricing of constructing a web application is contingent upon several factors, such as
                         project scope, feature intricacy, and timeline. During the initial consultation, we furnish
                         competitive rates and a comprehensive breakdown of costs. Our commitment lies in delivering
-                        cost-efficient and top-tier web application development solutions
+                        cost-efficient and top-tier web application development solutions.
                       </p>
                     </AccordionItemPanel>
                   </AccordionItem>

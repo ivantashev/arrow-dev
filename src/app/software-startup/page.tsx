@@ -13,6 +13,7 @@ import LatestNewsSlider from "../../components/Common/LatestNewsSlider";
 import AppDownload from "../../components/HomePages/SoftwareStartup/AppDownload";
 import CtaAreaTwo from "../../components/Common/CtaAreaTwo";
 import Footer from "../../components/Layouts/Footer";
+import Specialised from "@/components/HomePages/SoftwareStartup/Specialised";
 
 export default function Page() {
   return (
@@ -27,23 +28,25 @@ export default function Page() {
 
       <Partners />
 
-      <Overview />
+        <Overview/>
 
-      <Funfacts />
+        <Funfacts/>
 
-      <FeedbackThree />
+        <FeedbackThree/>
 
-      <Pricing />
+        <Pricing/>
 
-      <Faq />
+        <Faq/>
 
-      <AppDownload />
+        <Specialised/>
 
-      <LatestNewsSlider />
+        <AppDownload/>
 
-      <CtaAreaTwo />
+        <LatestNewsSlider/>
 
-      <Footer />
+        <CtaAreaTwo/>
+
+        <Footer/>
     </>
   );
 }

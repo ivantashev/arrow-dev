@@ -5,13 +5,10 @@ import HelpDesk from "../components/HomePages/SoftwareStartup/HelpDesk";
 import Screenshots from "../components/HomePages/SoftwareStartup/Screenshots";
 import Partners from "../components/HomePages/SoftwareStartup/Partners";
 import Overview from "../components/HomePages/SoftwareStartup/Overview";
-import Funfacts from "../components/HomePages/SoftwareStartup/Funfacts";
-import FeedbackThree from "../components/Common/FeedbackThree";
-import Pricing from "../components/HomePages/SoftwareStartup/Pricing";
 import Faq from "../components/HomePages/SoftwareStartup/Faq";
-import AppDownload from "../components/HomePages/SoftwareStartup/AppDownload";
 import CtaAreaTwo from "../components/Common/CtaAreaTwo";
 import Footer from "../components/Layouts/Footer";
+import Specialised from "@/components/HomePages/SoftwareStartup/Specialised";
 
 export default function Page() {
   return (
@@ -24,19 +21,21 @@ export default function Page() {
 
       <Screenshots />
 
-      <Partners />
+        <Partners/>
 
-      <Overview />
+        <Overview/>
 
-      {/*<Funfacts />*/}
+        {/*<Funfacts />*/}
 
-      {/*<FeedbackThree />*/}
+        {/*<FeedbackThree />*/}
 
-      <Faq />
+        <Faq/>
 
-      <CtaAreaTwo />
+        <Specialised/>
 
-      <Footer />
+        <CtaAreaTwo/>
+
+        <Footer/>
     </>
   );
 }
