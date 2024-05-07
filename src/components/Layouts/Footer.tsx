@@ -42,18 +42,8 @@ const Footer: React.FC = () => {
                     </a>
                   </li>
                   <li>
-                    <a href="https://twitter.com/" target="_blank">
-                      <i className="fa-brands fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://linkedin.com/" target="_blank">
+                    <a href="https://www.linkedin.com/company/arrow-technology" target="_blank">
                       <i className="fa-brands fa-linkedin-in"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/" target="_blank">
-                      <i className="fa-brands fa-instagram"></i>
                     </a>
                   </li>
                 </ul>

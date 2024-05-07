@@ -26,10 +26,10 @@ import "../../public/styles/software-home-page.css";
 // import "../../public/styles/cyber-security-agency-home-page.css";
 
 // Global Style
-import "../../public/styles/style.css";
-import "../../public/styles/responsive.css";
+import "../../public/styles/style.scss";
+import "../../public/styles/responsive.scss";
 // Global RTL Style
-import "../../public/styles/rtl.css";
+import "../../public/styles/rtl.scss";
 import "./globals.css";
 
 import type { Metadata } from "next";
@@ -53,8 +53,8 @@ const saira = Saira({
 });
 
 export const metadata: Metadata = {
-  title: "Pungent - React Nextjs Multipurpose Startup & Digital Agency Template",
-  description: "React Nextjs Multipurpose Startup & Digital Agency Template",
+  title: "Arrow Devs - NextJS, ReactJS and Laravel specialists",
+  description: "Arrow Devs - NextJS, ReactJS and Laravel specialists",
 };
 
 export default function RootLayout({

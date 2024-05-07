@@ -36,7 +36,7 @@ const softwareIntregrationsData = [
 const teamIntregrationsData = [
   {
     image: "/images/software/overview2.png",
-    subTitle: "Team Intregrations",
+    subTitle: "",
     title: "It is an easy solution for a very large solution",
     aosDelay: "100",
 

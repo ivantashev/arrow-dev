@@ -4,8 +4,8 @@ import React from "react";
 import {
   Accordion,
   AccordionItem,
-  AccordionItemHeading,
   AccordionItemButton,
+  AccordionItemHeading,
   AccordionItemPanel,
 } from "react-accessible-accordion";
 import Image from "next/image";
@@ -15,7 +15,7 @@ import faqImg from "../../../../public/images/software/faq-img.png";
 const Faq: React.FC = () => {
   return (
     <>
-      <div className="pb-50 pt-50">
+      <div className="ptb-50">
         <div className="container">
           <div className="section-title">
             <h2>Frequently Ask &amp; Question</h2>
@@ -24,19 +24,20 @@ const Faq: React.FC = () => {
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="faq-accordion software-faq">
-                <Accordion allowZeroExpanded preExpanded={["a"]}>
+                <Accordion allowZeroExpanded>
                   <AccordionItem uuid="a">
                     <AccordionItemHeading>
                       <AccordionItemButton>
-                        How many team members can I invite?
+                        What services does your Development Agency offer?
                       </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel>
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry&apos;s standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type.
+                        At our company, we offer an extensive selection of web application development services,
+                        encompassing custom solutions, API development, as well as migration services to NextJS/VueJS.
+                        Additionally, we provide reliable support and maintenance. Our team of experienced developers is
+                        dedicated to delivering top-notch, scalable, and secure web applications customised to suit your
+                        business requirements.
                       </p>
                     </AccordionItemPanel>
                   </AccordionItem>
@@ -44,15 +45,15 @@ const Faq: React.FC = () => {
                   <AccordionItem uuid="b">
                     <AccordionItemHeading>
                       <AccordionItemButton>
-                        What is the maximum file upload size?
+                        What is the cost of the web application development?
                       </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel>
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry&apos;s standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type.
+                        The pricing of constructing a web application is contingent upon several factors, such as
+                        project scope, feature intricacy, and timeline. During the initial consultation, we furnish
+                        competitive rates and a comprehensive breakdown of costs. Our commitment lies in delivering
+                        cost-efficient and top-tier web application development solutions
                       </p>
                     </AccordionItemPanel>
                   </AccordionItem>
@@ -60,15 +61,15 @@ const Faq: React.FC = () => {
                   <AccordionItem uuid="c">
                     <AccordionItemHeading>
                       <AccordionItemButton>
-                        How do I reset my password?
+                        Can you assist with support and maintenance for web applications after development?
                       </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel>
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry&apos;s standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type.
+                        Definitely! We provide post-development support and maintenance services for all web
+                        applications. Our team of experts delivers timely updates and ongoing maintenance to keep your
+                        web application current and running smoothly. Our dedication is to guarantee the enduring
+                        success of your web application.
                       </p>
                     </AccordionItemPanel>
                   </AccordionItem>
@@ -76,47 +77,14 @@ const Faq: React.FC = () => {
                   <AccordionItem uuid="d">
                     <AccordionItemHeading>
                       <AccordionItemButton>
-                        Can I cancel my subscription?
+                        Is your agency capable of integrating third-party applications with web applications?
                       </AccordionItemButton>
                     </AccordionItemHeading>
                     <AccordionItemPanel>
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry&apos;s standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type.
-                      </p>
-                    </AccordionItemPanel>
-                  </AccordionItem>
-
-                  <AccordionItem uuid="e">
-                    <AccordionItemHeading>
-                      <AccordionItemButton>
-                        Can I pay via an invoice?
-                      </AccordionItemButton>
-                    </AccordionItemHeading>
-                    <AccordionItemPanel>
-                      <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry&apos;s standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type.
-                      </p>
-                    </AccordionItemPanel>
-                  </AccordionItem>
-
-                  <AccordionItem uuid="f">
-                    <AccordionItemHeading>
-                      <AccordionItemButton>
-                        Can I cancel my subscription?
-                      </AccordionItemButton>
-                    </AccordionItemHeading>
-                    <AccordionItemPanel>
-                      <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry&apos;s standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type.
+                        Yes, our company has extensive experience in integrating third-party applications, covering
+                        APIs, plugins, and other apps. Our team excels at achieving seamless integration to elevate the
+                        functionality and user experience of your web application.
                       </p>
                     </AccordionItemPanel>
                   </AccordionItem>
