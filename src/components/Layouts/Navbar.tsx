@@ -1,6 +1,6 @@
 "use client";
 
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import MegaMenu from "./MegaMenu";
@@ -8,11 +8,7 @@ import MegaMenu from "./MegaMenu";
 import logo from "../../../public/images/arrow_logo_black.png";
 import logoWhite from "../../../public/images/arrow_logo_white.png";
 
-const Navbar = ({
-  logoColour = "black",
-}: {
-  logoColour?: string;
-}) => {
+const Navbar = ({ logoColour = "black" }: { logoColour?: string }) => {
   const [menu, setMenu] = useState<boolean>(true);
 
   const toggleNavbar = () => {
@@ -47,29 +43,19 @@ const Navbar = ({
                 Get in touch
               </Link>
             </div>
-
             {/* Toggle navigation */}
-            <button
-                onClick={toggleNavbar}
-                className={classTwo}
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span className="icon-bar top-bar"></span>
-              <span className="icon-bar middle-bar"></span>
-              <span className="icon-bar bottom-bar"></span>
-            </button>
 
             <div className={classOne} id="navbarSupportedContent">
               <ul className="navbar-nav">
-                <MegaMenu/>
+                <MegaMenu />
               </ul>
               <Link href="/" className="navbar-brand">
-                <Image src={(logoColour === 'black') ? logo : logoWhite} alt="logo" width={150} height={40}/>
+                <Image
+                  src={logoColour === "black" ? logo : logoWhite}
+                  alt="logo"
+                  width={150}
+                  height={40}
+                />
               </Link>
             </div>
           </div>
