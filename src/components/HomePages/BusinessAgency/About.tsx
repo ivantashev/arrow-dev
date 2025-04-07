@@ -1,21 +1,15 @@
 "use client";
 
 import React, { useState } from "react";
-import FsLightbox from "fslightbox-react";
 import Image from "next/image";
 
 import aboutImg from '../../../../public/images/about-img5.jpg';
 
 const About: React.FC = () => {
-  const [toggler, setToggler] = useState(false);
   return (
     <>
-      <FsLightbox
-        toggler={toggler}
-        sources={["https://www.youtube.com/embed/bk7McNUjWgw"]}
-      />
-
-      <section className="about-area bg-fcfbfb ptb-100">
+     
+        <section className="about-area bg-fcfbfb ptb-100">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-5 col-md-12">
@@ -32,15 +26,6 @@ const About: React.FC = () => {
                   width={500}
                   height={650}
                 />
-
-                <div className="video-box">
-                  <div
-                    className="video-btn"
-                    onClick={() => setToggler(!toggler)}
-                  >
-                    <i className="fa-solid fa-play"></i>
-                  </div>
-                </div>
               </div>
             </div>
 

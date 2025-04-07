@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import FsLightbox from "fslightbox-react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Mousewheel, Keyboard } from "swiper/modules";
@@ -13,11 +12,6 @@ const MainBanner: React.FC = () => {
   const [toggler, setToggler] = useState(false);
   return (
     <>
-      <FsLightbox
-        toggler={toggler}
-        sources={["https://www.youtube.com/embed/bk7McNUjWgw"]}
-      />
-
       <Swiper
         autoHeight={true}
         cssMode={true}

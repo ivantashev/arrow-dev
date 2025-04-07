@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import FsLightbox from "fslightbox-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -13,10 +12,6 @@ const MainBanner: React.FC = () => {
   const [toggler, setToggler] = useState(false);
   return (
     <>
-      <FsLightbox
-        toggler={toggler}
-        sources={["https://www.youtube.com/embed/bk7McNUjWgw"]}
-      />
 
       <div className="cs-banner-section">
         <div className="container-fluid">

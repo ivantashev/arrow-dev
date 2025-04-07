@@ -44,7 +44,7 @@ const HelpDesk: React.FC = () => {
     <>
       <div className="pb-70">
         <div className="container">
-          <div className="section-title">
+          <div className="section-title mt-5">
             <h3>Every Arrow project is a distinctive combination of marketing services tailored to optimize your brand's
               expansion</h3>
           </div>

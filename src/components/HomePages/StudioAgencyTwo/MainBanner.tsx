@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState, useEffect, useRef } from "react";
-import FsLightbox from "fslightbox-react";
 import Link from "next/link";
 
 const MainBanner: React.FC = () => {
@@ -22,11 +21,6 @@ const MainBanner: React.FC = () => {
 
   return (
     <>
-      <FsLightbox
-        toggler={toggler}
-        sources={["https://www.youtube.com/embed/bk7McNUjWgw"]}
-      />
-
       <div className="hero-banner video-studio center overly-6">
         <div className="video-background">
           <video

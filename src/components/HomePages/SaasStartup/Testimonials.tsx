@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import FsLightbox from "fslightbox-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
 import Image from "next/image";
@@ -36,11 +35,6 @@ const Testimonials: React.FC = () => {
   const [toggler, setToggler] = useState(false);
   return (
     <>
-      <FsLightbox
-        toggler={toggler}
-        sources={["https://www.youtube.com/embed/bk7McNUjWgw"]}
-      />
-
       <div className="saas-testimonials-area bg-dark pb-100">
         <div className="container">
           <div className="saas-video-box">

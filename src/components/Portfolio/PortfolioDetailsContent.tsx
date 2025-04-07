@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import FsLightbox from "fslightbox-react";
 import Image from "next/image";
 
 import portfolioDedailsImg from "../../../public/images/portfolio-details.jpg";
@@ -10,11 +9,6 @@ const PortfolioDetailsContent: React.FC = () => {
   const [toggler, setToggler] = useState(false);
   return (
     <>
-      <FsLightbox
-        toggler={toggler}
-        sources={["https://www.youtube.com/embed/bk7McNUjWgw"]}
-      />
-
       <div className="portfolio-details ptb-100">
         <div className="container">
           <div className="pd-preview-img">
