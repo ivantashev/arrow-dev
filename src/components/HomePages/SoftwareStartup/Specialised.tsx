@@ -20,6 +20,10 @@ const frameworks = [
     image: "/images/frameworks/vuejs.png",
     aosDelay: "500",
   },
+  {
+    image: "/images/frameworks/go.png",
+    aosDelay: "500",
+  },
 ];
 
 const Specialised: React.FC = () => {
@@ -42,8 +46,8 @@ const Specialised: React.FC = () => {
             <div className="col-lg-8 col-md-12">
               <div className="row justify-content-center align-items-center">
                 {frameworks &&
-                  frameworks.slice(0, 4).map((value, i) => (
-                    <div className="col-lg-3 col-md-3 col-sm-3 col-6" key={i}>
+                  frameworks.slice(0, 5).map((value, i) => (
+                    <div className="col-lg-2 col-md-2 col-sm-3 col-6" key={i}>
                       <div
                         className="software-partner-item"
                         data-aos="fade-in"

@@ -19,7 +19,7 @@ const Banner: React.FC = () => {
                     data-aos-duration="1000"
                     data-aos-delay="200"
                 >
-                  Helping Your Organisation to Succeed
+                  Supporting Your Business's Success
                 </h1>
 
                 <p
